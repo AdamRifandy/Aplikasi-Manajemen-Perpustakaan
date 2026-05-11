@@ -2,3 +2,4 @@
 /.git/
 .env
 data_perpustakaan.db
+.gitkeep
