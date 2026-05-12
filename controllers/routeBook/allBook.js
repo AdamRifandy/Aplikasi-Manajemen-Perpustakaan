@@ -8,7 +8,7 @@ export default (req, res) => {
       data: sql,
       status: false
     });
-    if (sql.length === 0) return res.status(204).json({
+    if (sql.length === 0) return res.status(200).json({
       message: "Tidak ada data buku yang tersimpan pada database saat ini.",
       data: sql,
       status: true
