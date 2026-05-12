@@ -8,6 +8,8 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan('dev'));
 app.use("/perpustakaan", route);
+app.use("/assets", express.static('assets'));
+app.use(express.static('views'));
 
 app.listen(process.env.PORT, () => {
   console.log(`Running application on port: ${process.env.PORT}.`);
